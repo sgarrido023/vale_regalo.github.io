@@ -121,7 +121,7 @@ body {
 /*lo añadp nuevo para ajustar pantalla, en teoria todo esto es para las imagenes*/
 
 .tamaño {
-    width: 100%; /* Ajusta al 100% del contenedor */
+    width: 90%; /* Ajusta al 100% del contenedor */
     max-width: 400px; /* Limita el tamaño máximo en pantallas grandes */
     height: auto; /* Ajusta la altura de forma proporcional */
 }
@@ -154,7 +154,7 @@ body {
         font-size: 0.9em; /* Reducir el tamaño del texto */
     }
     .tamaño {
-        width: 100%;
+        width: 90%;
         max-width: 300px; /* Ajustar las imágenes para móviles */
         height: auto; /* Ajusta la altura de forma proporcional */quiar/*
     }
@@ -176,7 +176,7 @@ body {
     }
 
     .tamaño {
-        width: 100%;
+        width: 90%;
         max-width: 300px; /* Ajustar las imágenes para móviles */
         height: auto; /* Ajusta la altura de forma proporcional */quiar/*
     }
