@@ -11,6 +11,7 @@ body {
 
 .boton_magia{
     display: block;
+    /*lo añadp nuevo para ajustar pantalla antes el paddinf era de 40px*/
     padding: 8px 40px;
     margin: auto;
     border: 2px solid ;
@@ -18,11 +19,16 @@ body {
     font-weight: 500;
     font-weight: bold;
     background-color:#f4d4fb ;
+    /*lo añadp nuevo para ajustar pantalla*/
+    /*font-size: 1em;*/
    
    
 }
 .container {
     text-align: center;
+    /*lo añadp nuevo para ajustar pantalla*/
+    /*width: 90%;
+    max-width: 600px;*/
 }
 .container p{
     font-family: sans-serif;
@@ -35,26 +41,31 @@ body {
 
 #message {
     margin: 20px 0;
-    font-size: 24px;
+    /*lo añadp nuevo para ajustar pantalla antes era 24px*/
+    font-size: 20px;
     color: #333;
 }
 
 .balloons-container {
     position: relative;
-    height: 300px; /* altura para la animación */
+    /*lo añadp nuevo para ajustar pantalla, antes era de 300px*/
+    height: 200px; /* altura para la animación */
 }
 
 .balloon {
     position: absolute;
-    width: 50px;
+    /*lo añadp nuevo para ajustar pantalla antes era de 50px*/
+    width: 40px;
     height: 70px;
     border-radius: 25px;
     animation: float 2s ease-in-out infinite, changeColor 3s infinite;
 }
 
 .string {
-    width: 2px;
-    height: 100px; /* longitud del hilo */
+    /*lo añadp nuevo para ajustar pantalla, antes era de 2px*/
+    width: 1.5px;
+    /*lo añadp nuevo para ajustar pantalla, antes era de 100px*/
+    height: 80px; /* longitud del hilo */
     background-color: #000; /* color del hilo */
     position: absolute;
     bottom: -100px; /* posición del hilo debajo del globo */
@@ -100,11 +111,65 @@ body {
 
 
 /*estilo para las imágenes*/
-.tamaño{
+/*.tamaño{
     width: 450px;
     height: 350px
+}*/
+
+/*lo añadp nuevo para ajustar pantalla, en teoria todo esto es para las imagenes*/
+
+.tamaño {
+    width: 100%; /* Ajusta al 100% del contenedor */
+    max-width: 400px; /* Limita el tamaño máximo en pantallas grandes */
+    height: auto; /* Ajusta la altura de forma proporcional */
 }
 
-.imagenes_finales{
-    margin: 10px 0 ;
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Ajustar a pantallas más pequeñas */
+    }
+
+    .balloons-container {
+        height: 150px; /* Reducir la altura en pantallas pequeñas */
+    }
+
+    .balloon {
+        width: 30px; /* Hacer los globos más pequeños */
+        height: 50px;
+    }
+
+    .string {
+        height: 60px; /* Hilo más corto */
+    }
+
+    #message {
+        font-size: 18px; /* Texto más pequeño en pantallas pequeñas */
+    }
+
+    .boton_magia {
+        padding: 8px 15px; /* Reducir el padding del botón */
+        font-size: 0.9em; /* Reducir el tamaño del texto */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para pantallas muy pequeñas (móviles) */
+    .balloons-container {
+        height: 100px;
+    }
+
+    .balloon {
+        width: 25px;
+        height: 40px;
+    }
+
+    .string {
+        height: 50px;
+    }
+
+    .tamaño {
+        width: 100%;
+        max-width: 300px; /* Ajustar las imágenes para móviles */
+    }
 }
