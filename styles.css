@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #bde0fe;
+    font-family: Arial, sans-serif;
+}
+
+
+.boton_magia{
+    display: block;
+    padding: 8px 40px;
+    margin: auto;
+    border: 2px solid ;
+    border-radius: 8px;
+    font-weight: 500;
+    font-weight: bold;
+    background-color:#f4d4fb ;
+   
+   
+}
+.container {
+    text-align: center;
+}
+.container p{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+#message {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.balloons-container {
+    position: relative;
+    height: 300px; /* altura para la animación */
+}
+
+.balloon {
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    border-radius: 25px;
+    animation: float 2s ease-in-out infinite, changeColor 3s infinite;
+}
+
+.string {
+    width: 2px;
+    height: 100px; /* longitud del hilo */
+    background-color: #000; /* color del hilo */
+    position: absolute;
+    bottom: -100px; /* posición del hilo debajo del globo */
+    left: 50%;
+    transform: translateX(-50%); /* centrar el hilo */
+}
+
+@keyframes float {
+    0% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 150px; /* altura máxima */
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes changeColor {
+    0%, 100% {
+        background-color: #fdffb6; /* color inicial */
+    }
+    25% {
+        background-color: #caffbf; /* segundo color */
+    }
+    50% {
+        background-color: #ffc6ff; /* tercer color */
+    }
+    75% {
+        background-color: #B5B9FF; /* cuarto color */
+    }
+}
+
+.balloon:nth-child(1) { left: 50%; animation-delay: 1s; }
+.balloon:nth-child(2) { left: 85%; animation-delay: 2s; }
+.balloon:nth-child(3) { left: 90%; animation-delay: 3s; }
+.balloon:nth-child(4) { left: 70%; animation-delay: 0.5s; }
+.balloon:nth-child(5) { left: 30%; animation-delay: 1.5s; }
+.balloon:nth-child(6) { left: 40%; animation-delay: 2.5s; }
+.balloon:nth-child(7) { left: 60%; animation-delay: 3.5s; }
+.balloon:nth-child(8) { left: 20%; animation-delay: 4.5s; }
+
+
+/*estilo para las imágenes*/
+.tamaño{
+    width: 450px;
+    height: 350px
+}
+
+.imagenes_finales{
+    margin: 10px 0 ;
+}
