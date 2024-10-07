@@ -126,6 +126,13 @@ body {
     height: auto; /* Ajusta la altura de forma proporcional */
 }
 
+.imagenes_finales {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Añadir un pequeño espacio entre las imágenes */
+    flex-wrap: wrap; /* Permitir que las imágenes se ajusten si la pantalla es pequeña */
+}
+
 /* Media queries para pantallas pequeñas */
 @media (max-width: 768px) {
     .container {
