@@ -42,7 +42,7 @@ body {
 }
 
 #message {
-    margin: 20px 0;
+    margin: 50px 0;
     /*lo añadp nuevo para ajustar pantalla antes era 24px*/
     font-size: 20px;
     color: #333;
@@ -130,6 +130,7 @@ body {
 @media (max-width: 768px) {
     .container {
         width: 95%; /* Ajustar a pantallas más pequeñas */
+        margin-top: 80px; /* Aumentar aún más el margen superior en móviles */
     }
 
     .balloons-container {
@@ -147,6 +148,7 @@ body {
 
     #message {
         font-size: 18px; /* Texto más pequeño en pantallas pequeñas */
+        margin-top: 60px; /* Aumentar aún más el margen superior en móviles */
     }
 
     .boton_magia {
@@ -162,6 +164,10 @@ body {
 
 @media (max-width: 480px) {
     /* Ajustes para pantallas muy pequeñas (móviles) */
+    .container {
+        margin-top: 100px; /* Aumentar el margen superior en pantallas móviles más pequeñas */
+    }
+        
     .balloons-container {
         height: 100px;
     }
@@ -179,5 +185,10 @@ body {
         width: 90%;
         max-width: 300px; /* Ajustar las imágenes para móviles */
         height: auto; /* Ajusta la altura de forma proporcional */quiar/*
+    }
+
+    #message {
+        font-size: 16px; /* Texto aún más pequeño en pantallas muy pequeñas */
+        margin-top: 70px; /* Mayor margen superior */
     }
 }
