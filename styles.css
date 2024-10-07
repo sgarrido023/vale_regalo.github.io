@@ -158,7 +158,7 @@ body {
     .tamaño {
         width: 90%;
         max-width: 300px; /* Ajustar las imágenes para móviles */
-        height: auto; /* Ajusta la altura de forma proporcional*/ 
+        
         }
     
 }
@@ -185,7 +185,7 @@ body {
     .tamaño {
         width: 90%;
         max-width: 300px; /* Ajustar las imágenes para móviles */
-        height: auto; /* Ajusta la altura de forma proporcional */
+        
     }
 
     #message {
