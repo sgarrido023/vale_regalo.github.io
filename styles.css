@@ -29,7 +29,7 @@ body {
     /*lo añadp nuevo para ajustar pantalla*/
     width: 90%;
     margin-top:200px;
-    /*max-width: 600px;*/
+    max-width: 600px;
 }
 .container p{
     font-family: sans-serif;
