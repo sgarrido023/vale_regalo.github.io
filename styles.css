@@ -28,6 +28,7 @@ body {
     text-align: center;
     /*lo añadp nuevo para ajustar pantalla*/
     width: 90%;
+    margin-top:20px;
     /*max-width: 600px;*/
 }
 .container p{
