@@ -153,6 +153,11 @@ body {
         padding: 8px 15px; /* Reducir el padding del botón */
         font-size: 0.9em; /* Reducir el tamaño del texto */
     }
+    .tamaño {
+        width: 100%;
+        max-width: 300px; /* Ajustar las imágenes para móviles */
+        height: auto; /* Ajusta la altura de forma proporcional */quiar/*
+    }
 }
 
 @media (max-width: 480px) {
@@ -173,5 +178,6 @@ body {
     .tamaño {
         width: 100%;
         max-width: 300px; /* Ajustar las imágenes para móviles */
+        height: auto; /* Ajusta la altura de forma proporcional */quiar/*
     }
 }
