@@ -126,7 +126,7 @@ body {
     height: auto; /* Ajusta la altura de forma proporcional */
 }
 
-.imagenes_finales {
+/*.imagenes_finales {
     display: flex;
     justify-content: center;
     gap: 10px; /* Añadir un pequeño espacio entre las imágenes */
@@ -199,4 +199,4 @@ body {
         font-size: 16px; /* Texto aún más pequeño en pantallas muy pequeñas */
         margin-top: 70px; /* Mayor margen superior */
     }
-}
+}*/
